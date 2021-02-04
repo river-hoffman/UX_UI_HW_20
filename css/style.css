@@ -360,12 +360,12 @@ p {
 
 .tradesiesHead {
     background: linear-gradient(rgba(0, 0, 0, 0.50),
-            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/tradesies/Header.png);
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/cover-tradesies.png);
     background-size: cover;
 }
 .doeHead{
     background: linear-gradient(rgba(0, 0, 0, 0.50),
-            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/doe/Header.png);
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/cover-doe.png);
     background-size: cover;
 }
 
@@ -493,6 +493,9 @@ iframe{
 
     h2 {
         font-size: 28px;
+    }
+    #usabTable td, #compTable td{
+        padding: 5px;
     }
     iframe{
         width: 100%;
