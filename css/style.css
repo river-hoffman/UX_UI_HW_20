@@ -251,7 +251,7 @@ p {
 .portfolio-section {
     max-width: 960px;
     margin: 0 auto;
-    padding: 6% 2%;
+    padding: 2%;
 }
 
 .portfolio-section h2,
@@ -361,6 +361,11 @@ p {
 .tradesiesHead {
     background: linear-gradient(rgba(0, 0, 0, 0.50),
             rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/tradesies/Header.png);
+    background-size: cover;
+}
+.doeHead{
+    background: linear-gradient(rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/doe/Header.png);
     background-size: cover;
 }
 
