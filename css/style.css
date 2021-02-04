@@ -11,10 +11,8 @@ body {
 }
 
 #home-bg {
-    background:linear-gradient(
-      rgba(0, 0, 0, 0.50), 
-      rgba(0, 0, 0, 0.10)
-    ), url(../assets/images/homepage_bg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.10)), url(../assets/images/homepage_bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,6 +181,7 @@ h2 {
     margin: 0 auto;
     margin-top: 20px;
     width: 80%;
+    max-width: 922px;
 }
 
 #content-lt {
@@ -235,7 +234,7 @@ p {
     float: left;
     margin-left: 10%;
     margin-right: 10%;
-    
+
 }
 
 #content-skills h2 {
@@ -243,135 +242,246 @@ p {
 }
 
 #content-skills ul {
-    list-style-type:circle;
+    list-style-type: circle;
     columns: 4;
     -webkit-columns: 4;
     -moz-columns: 4;
 }
-.portfolio-section{
-    max-width:960px;
-	margin:0 auto;
-	padding:6% 2%;
-}
-.portfolio-section h2, .portfolio-section h3{
-    text-align: center;
-}
-.portfolio-grid{
-    margin: 20px 0 0 0;
-	padding: 0;
-	list-style: none;
-	display: block;
-	text-align: center;
-	width: 100%;
+
+.portfolio-section {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 6% 2%;
 }
 
-.portfolio-grid:after{
+.portfolio-section h2,
+.portfolio-section h3,
+.portfolio-section p {
+    text-align: center;
+}
+
+.portfolio-grid {
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio-grid:after {
     clear: both;
 }
-.portfolio-grid:after, .portfolio-box:before {
+
+.portfolio-grid:after,
+.portfolio-box:before {
     content: '';
     display: table;
 }
 
 .portfolio-grid li {
     width: 300px;
-	height: 300px;
-	display: inline-block;
-	margin: 20px;
-}
-.portfolio-box{
-    width: 100%;
-	height: 100%;
-	position: relative;
-	cursor: pointer;
-    border-radius: 20px;
-    box-shadow: 5px 5px #a3d3d9;
-    -webkit-transition: 0.3s ease-in-out, 
-    -webkit-transform 0.3s ease-in-out;
-	-moz-transition:  0.3s ease-in-out, 
-    -moz-transform 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out, 
-    transform 0.3s ease-in-out, ;
+    height: 300px;
+    display: inline-block;
+    margin: 20px;
 }
 
-.portfolio-box:hover{
+.portfolio-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 5px 5px #a3d3d9;
+    -webkit-transition: 0.3s ease-in-out,
+        -webkit-transform 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out,
+        -moz-transform 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out,
+        transform 0.3s ease-in-out, ;
+}
+
+.portfolio-box:hover {
     transform: scale(1.05);
 }
 
-.portfolio-img1{
+.portfolio-img1 {
     background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.50), 
-      rgba(0, 0, 0, 0.10)
-    ), url(../assets/images/portfolio/cover-nowtrips.png);
-    background-size: cover;
-}
-.portfolio-img2{
-    background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.50), 
-      rgba(0, 0, 0, 0.10)
-    ), url(../assets/images/portfolio/cover-tradesies.png);
-    background-size: cover;
-}
-.portfolio-img3{
-    background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.50), 
-      rgba(0, 0, 0, 0.10)
-    ), url(../assets/images/portfolio/cover-doe.png);
-    background-size: cover;
-}
-.portfolio-img4{
-    background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.50), 
-      rgba(0, 0, 0, 0.10)
-    ), url(../assets/images/portfolio/cover-panthera.png);
+        linear-gradient(rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/cover-nowtrips.png);
     background-size: cover;
 }
 
-#portfolio-info{
-    position: absolute;
-	width: 100%;
-	height: 100%;
+.portfolio-img2 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/cover-tradesies.png);
+    background-size: cover;
 }
-#portfolio-info h3{
+
+.portfolio-img3 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/cover-doe.png);
+    background-size: cover;
+}
+
+.portfolio-img4 {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/cover-panthera.png);
+    background-size: cover;
+}
+
+#portfolio-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio-info h3 {
     font-family: 'Saira', serif;
     font-weight: 400;
-	color: #fff;
-	font-size: 42px;
-	margin: 0 30px;
-	padding: 100px 0 0 0;
-	line-height:1.5;
+    color: #fff;
+    font-size: 42px;
+    margin: 0 30px;
+    padding: 100px 0 0 0;
+    line-height: 1.5;
 }
-#portfolio-info p{
+
+#portfolio-info p {
     font-family: 'Saira', sans-serif;
-	color: #fff;
-	padding: 4px 5px;
-	margin: 0 30px;
-	font-size: 14px;
-	line-height:3;
+    color: #fff;
+    padding: 4px 5px;
+    margin: 0 30px;
+    font-size: 14px;
+    line-height: 3;
+}
+
+.tradesiesHead {
+    background: linear-gradient(rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/tradesies/Header.png);
+    background-size: cover;
+}
+
+.casestudyHeader {
+    width: 100%;
+    max-height: 400px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 8px;
+}
+
+#header-text {
+    color: white;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h3 {
+    font-family: 'Saira', serif;
+    font-weight: 400;
+    font-size: 42px;
+}
+
+#roleTool {
+    width: 100%;
+    padding: 10px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    margin-bottom: 8px;
+}
+#roleTool p{
+    margin: 0px;
+}
+h4 {
+    font-family: 'Saira', serif;
+    font-weight: bolder;
+    font-size: 18px;
+    margin: 0px;
+}
+h5{
+    font-family: 'Saira', serif;
+    font-weight: bolder;
+    font-size: 16px;
+    margin: 0px;
+}
+#casestudyH3{
+    text-align: center;
+    margin: 0px;
+}
+#casestudyImg {
+    width: 100%;
+    margin-bottom: 8px;
+}
+#compTable, #usabTable{
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 8px;
+    text-align: left;
+}
+#compTable th{
+    text-align: center;
+}
+#usabTable td, #compTable td{
+    vertical-align: top;
+    padding: 10px;
+}
+#left{
+    width: 20%;
+}
+#right{
+    
+}
+#prototype{
+    width: 100%;
+}
+#casestudyEnd{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.work-btn{
+    margin-top: 16px;
+    margin-bottom: 40px;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #04BFBF;
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    #content-lt, #content-rt{
+
+    #content-lt,
+    #content-rt {
         float: left;
         width: 80%;
     }
-    #content-rt{
+
+    #content-rt {
         margin-left: 10%;
         margin-right: 10%;
     }
-    #content-skills ul{
+
+    #content-skills ul {
         columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
     }
-    h1{
+
+    h1 {
         font-size: 36px;
     }
-    h2{
-       font-size: 28px; 
+
+    h2 {
+        font-size: 28px;
     }
 }
