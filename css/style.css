@@ -292,17 +292,18 @@ p {
     position: relative;
     cursor: pointer;
     border-radius: 20px;
-    box-shadow: 5px 5px #a3d3d9;
+    box-shadow: 2px 2px #a3d3d9;
     -webkit-transition: 0.3s ease-in-out,
-        -webkit-transform 0.3s ease-in-out;
+    -webkit-transform 0.3s ease-in-out;
     -moz-transition: 0.3s ease-in-out,
-        -moz-transform 0.3s ease-in-out;
+    -moz-transform 0.3s ease-in-out;
     transition: all 0.3s ease-in-out,
         transform 0.3s ease-in-out, ;
 }
 
 .portfolio-box:hover {
     transform: scale(1.05);
+    
 }
 
 .portfolio-img1 {
@@ -337,6 +338,7 @@ p {
     position: absolute;
     width: 100%;
     height: 100%;
+    text-shadow: 1px 1px #000000;
 }
 
 #portfolio-info h3 {
@@ -354,18 +356,18 @@ p {
     color: #fff;
     padding: 4px 5px;
     margin: 0 30px;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 3;
 }
 
 .tradesiesHead {
     background: linear-gradient(rgba(0, 0, 0, 0.50),
-            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/cover-tradesies.png);
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/tradesies/header.png);
     background-size: cover;
 }
 .doeHead{
     background: linear-gradient(rgba(0, 0, 0, 0.50),
-            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/cover-doe.png);
+            rgba(0, 0, 0, 0.10)), url(../assets/images/portfolio/doe/header.png);
     background-size: cover;
 }
 
@@ -386,6 +388,7 @@ p {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-shadow: 1px 1px #000000;
 }
 
 h3 {
