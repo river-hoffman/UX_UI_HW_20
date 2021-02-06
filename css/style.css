@@ -156,6 +156,7 @@ h2 {
     content: "";
     animation: animate infinite 3s;
     border-bottom: 10px double white;
+    display: block;
 }
 
 @keyframes animate {
